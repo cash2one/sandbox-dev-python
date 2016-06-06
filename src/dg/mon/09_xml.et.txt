@@ -1,0 +1,31 @@
+#!/usr/bin/python
+#encoding:utf-8
+
+from xml.etree import ElementTree as ET
+from xml.etree.ElementTree import Element
+
+tree = ET.parse(r'e:/xml.txt')
+root = tree.getroot()
+print root.tag  ##tag name, 即node name
+print root.attrib  ##节点的属性字典
+for i in root:
+    print i.tag
+
+for i in root.iter('normal'):
+    print i.tag
+print root.findall('python')  ##所有子节点
+print root.find('normal').text  ##查找第一个子节点
+print root.getchildren()  ##获取孩子节点
+
+print root.get('name')  ##获取属性
+root.set('k', 'v')  ##设置节点属性
+print root.attrib
+
+e = Element('et', {'k1', 'v1'})
+e.text = 'et text'
+root.append(e)
+
+root.remove(e)
+# root.clear()
+
+tree.write(r'e:/xml.txt', 'utf-8')

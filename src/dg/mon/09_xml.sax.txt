@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from xml.sax.handler import ContentHandler
+from xml.sax import parse
+
+
+class TestHandle(ContentHandler):
+    def __init__(self, inlist):
+        self.inlist = inlist
+
+    def startElement(self,name, attrs):
+        print 'name:',name, 'attrs:',attrs.keys()
+
+    def endElement(self,name):
+        print 'endname',name
+
+    def characters(self,chars):
+        print 'chars',chars
+        self.inlist.append(chars)
+
+
+if __name__ == '__main__':
+    lt = []
+    parse(r'e:/xml.txt', TestHandle(lt))
+    print lt

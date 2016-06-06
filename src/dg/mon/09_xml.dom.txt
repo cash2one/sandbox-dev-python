@@ -1,0 +1,44 @@
+#!/usr/bin/python
+#encoding:utf-8
+
+from xml.dom import minidom
+
+def write_xml():
+    dom = minidom.Document()
+    c = dom.createComment('xml comment')  ##xml注释
+    root = dom.createElement("python")  ##xml节点
+    root.setAttribute('name', 'test')
+    att = dom.createAttribute('pythonAtt')  ##xml属性
+    att.nodeValue = 'dataguru'
+    root.setAttributeNode(att)
+    e2 = dom.createElement('normal')
+    t = dom.createTextNode('文本内容')  ###xml普通文本内容
+    e2.appendChild(t)
+    e3 = dom.createElement('cdatatext')
+    cdata = dom.createCDATASection('sdjfsljf!@#!@3`1`12`2<><')  ##xmlCDATA节点内容
+    e3.appendChild(cdata)
+
+    dom.appendChild(c)
+    dom.appendChild(root)
+    root.appendChild(e2)
+    root.appendChild(e3)
+    print dom.toxml()
+    print dom.toprettyxml()
+
+    f = open(r'e:/xml.txt', 'w')
+    dom.writexml(f)
+    f.close()
+
+def read_xml():
+    dom = minidom.parse(r'e:/xml.txt')
+    xml =  dom.toxml().encode('utf-8')
+    print xml
+    dom2 = minidom.parseString(xml)
+    print dom2.toprettyxml()
+    fc = dom.firstChild
+    childs = dom.childNodes
+    for i in childs:
+        print i.nodeType, i.nodeName, i.nodeValue
+
+    py = dom.getElementsByTagName('python')[0]
+    print py.getAttribute('name')
