@@ -10,6 +10,7 @@ import time
 rlock = threading.RLock()
 curPosition = 0
 
+
 class writer(Thread):
     def __init__(self, res, num):
         Thread.__init__(self)
@@ -37,6 +38,7 @@ class writer(Thread):
                 time.sleep(1)
                 print 'waiting for write...'
                 continue
+
 
 class reader(Thread):
     def __init__(self, res, num):
@@ -72,6 +74,7 @@ class reader(Thread):
         fstream.seek(0, os.SEEK_END)
         self.fileSize = fstream.tell()
         fstream.close()
+
 
 class resource(object):
     def __init__(self, fn, m, q=None):

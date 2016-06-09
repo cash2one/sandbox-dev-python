@@ -2,6 +2,7 @@
 #encoding:utf-8
 import xlwt
 
+
 def txt2excel(txt_filename, excel_filename):
 
     f = open(txt_filename)             # get file object
@@ -27,4 +28,4 @@ def txt2excel(txt_filename, excel_filename):
     workbook.save(excel_filename)
 
 if __name__ == '__main__':
-    txt2excel('d:/tmp/data1.txt', 'd:/tmp/myexcel.xls')
+    txt2excel('data.txt', 'myexcel.xls')
