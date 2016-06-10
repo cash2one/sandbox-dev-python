@@ -118,45 +118,57 @@ def remove_file(filepath):
         pass
 
 
-if __name__ == "__main__":
-    # read()
-
-    fromDict = {'type': 'sqlite', 'connect_paramters': 'test.sqlite3'}
-    sqlite_filepath = fromDict['connect_paramters']
-
-    remove_file(sqlite_filepath)
-
-    write(sqlite_filepath)
+def extract_data(sqlite_filepath):
 
     table_list = get_table_list(sqlite_filepath)
     table_list = list(itertools.chain(*table_list))
     # table_list = list(itertools.chain(get_table_list('output.sqllite3'))
     # print(table_list)
+    
     create_statments = []
     insert_statments = []
     for table_name in table_list:
-
         column_infos = get_table_info(sqlite_filepath, table_name)
-        create_statment = "create table {0} ".format(table_name);
-        insert_statment = "insert into {0} values ( ".format(table_name);
-
+        create_statment = "create table {0} (".format(table_name);
+        
         for column_info in column_infos:
             create_statment = create_statment + '{0} {1}, '.format(column_info[1], column_info[2])
-        create_statments.append(create_statment[0:len(create_statment) - 2] + " ;")
+        create_statments.append(create_statment[0:len(create_statment) - 2] + " );")
 
         records = get_table_data(sqlite_filepath, table_name)
         for record in records:
-            # insert_statment = insert_statment + '{0}, '.format(column_info[1], column_info[2])
+            insert_statment = "insert into {0} values ( ".format(table_name);
             for column_data in record:
-                print(type(column_data))
+                # print(type(column_data))
                 if type(column_data) is unicode:
                     insert_statment = insert_statment + '\'{0}\', '.format(column_data)
                 if type(column_data) in (int, float):
                     insert_statment = insert_statment + '{0}, '.format(column_data)
-            # insert_statment = ', '.join(record)
             insert_statments.append(insert_statment[0:len(insert_statment) - 2] + " ) ;")
-        print(records)
+        # print(records)
 
-    print(create_statments)
-    print(insert_statments)
+    # print(create_statments)
+    # print(insert_statments)
+    return(create_statments+insert_statments)
 
+
+def load_data(sqlite_filepath, statments):
+    conn = sqlite3.connect(sqlite_filepath)
+    for statment in statments:
+        print(statment)
+        conn.execute(statment)
+    conn.commit()
+    conn.close()
+
+
+if __name__ == '__main__':
+    fromDict = {'type': 'sqlite', 'connect_paramters': 'test.sqlite3'}
+    
+    sqlite_filepath = fromDict['connect_paramters']
+    
+    # reset test data    
+    remove_file(sqlite_filepath)
+    write(sqlite_filepath)
+
+    result = extract_data(sqlite_filepath)
+    print(result)
