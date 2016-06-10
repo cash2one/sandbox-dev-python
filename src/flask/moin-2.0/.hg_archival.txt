@@ -1,0 +1,6 @@
+repo: 5568cf133caf733cc3abcf05d4e8130be2370d42
+node: b2417a0dd48f1c213ba3a1d4c28f26cae3c3c39e
+branch: default
+latesttag: moin20-repo-reboot
+latesttagdistance: 1846
+changessincelatesttag: 2891
