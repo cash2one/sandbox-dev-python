@@ -49,14 +49,14 @@ def etl_data(fromDict, toDict):
 if __name__ == '__main__':
     
     # Test #1 sqlite => sqlite
-    # fromDict = {'type': 'sqlite', 'connect_paramters': 'from.sqlite3'}
-    # toDict = {'type': 'sqlite', 'connect_paramters': 'to.sqlite3'}
+    fromDict = {'type': 'sqlite', 'connect_paramters': 'from.sqlite3'}
+    toDict = {'type': 'sqlite', 'connect_paramters': 'to.sqlite3'}
     # Test #2 sqlite => mysql
     # fromDict = {'type': 'sqlite', 'connect_paramters': 'from.sqlite3'}
     # toDict = {'type' : 'mysql', 'connect_paramters' : {'host':'localhost', 'username':'root', 'password':'mysql', 'port':'3306', 'dbname':'test'}}
     # Test #3 mysql => mysql
-    fromDict = {'type' : 'mysql', 'connect_paramters' : {'host':'localhost', 'username':'root', 'password':'mysql', 'port':'3306', 'dbname':'test'}}
-    toDict = {'type' : 'mysql', 'connect_paramters' : {'host':'localhost', 'username':'root', 'password':'mysql', 'port':'3306', 'dbname':'test1'}}
+    # fromDict = {'type' : 'mysql', 'connect_paramters' : {'host':'localhost', 'username':'root', 'password':'mysql', 'port':'3306', 'dbname':'test'}}
+    # toDict = {'type' : 'mysql', 'connect_paramters' : {'host':'localhost', 'username':'root', 'password':'mysql', 'port':'3306', 'dbname':'test1'}}
     # Test #4 mysql => sqlite
     # fromDict = {'type' : 'mysql', 'connect_paramters' : {'host':'localhost', 'username':'root', 'password':'mysql', 'port':'3306', 'dbname':'test'}}
     # toDict = {'type': 'sqlite', 'connect_paramters': 'to.sqlite3'}
