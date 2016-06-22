@@ -48,7 +48,9 @@ class View:
         print id
         post = model.get_post(int(id))
         print post
-        return render.view(post)
+        # return render.view(post)
+        comments = model.get_comments_by_blog(id)
+        return render.view(post, comments)
 #新建文章类
 class New:
     form = web.form.Form(
@@ -104,3 +106,12 @@ app.notfound = notfound
 #运行
 if __name__ == '__main__':
     app.run()
+
+
+class NewComment:
+    def POST(self):
+        form = self.form()
+        if not form.validates():
+            return render.new(form)
+        model.new_comment(form.d.title, form.d.content)
+        raise web.seeother('/')

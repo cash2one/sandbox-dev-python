@@ -1,4 +1,11 @@
-$def with (post)
+$def with (post, comments)
 <h1>$post.title</h1>
+<p>
 $post.posted_on<br />
-$post.content
+$post.content<br />
+</p>
+comments:
+<p>
+	$comments[0].title<br />
+</p>
+

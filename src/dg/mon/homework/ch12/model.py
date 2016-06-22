@@ -32,3 +32,13 @@ def update_post(id, title, text):
         vars = locals(),
         title = title,
         content = text)
+
+
+def get_comments_by_blog(blog_id):
+    return db.select('comment', where = 'blog_id=$blog_id', vars = locals(), order = 'id DESC')
+def new_comment(title, text, blog_id):
+    db.insert('comment',
+        blog_id = blog_id,
+        title = title,
+        content = text,
+        posted_on = datetime.datetime.utcnow())

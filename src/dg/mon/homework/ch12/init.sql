@@ -5,3 +5,11 @@ CREATE TABLE blog (
     posted_on DATETIME,
     primary key (id)
 );
+CREATE TABLE comment (
+    id INT AUTO_INCREMENT,
+    blog_id INT,
+    title TEXT,
+    content TEXT,
+    posted_on DATETIME,
+    primary key (id)
+);
