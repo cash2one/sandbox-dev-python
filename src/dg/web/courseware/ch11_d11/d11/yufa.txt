@@ -1,0 +1,52 @@
+标签：{% key %}
+变量：{{ var }}
+注释：{# This is a comment #}
+
+
+if/else
+{% if today_is_weekend %}
+<p>Welcome to the weekend!</p>
+{% else %}
+<p>Get back to work.</p>
+{% endif %}
+注：没有 {% elif %} 标签， 请使用嵌套的`` {% if %}`` 标签来达成
+
+for
+{% for athlete in athlete_list %}
+<p>{{ athlete.name }}</p>
+模版
+djangobook.py3k.cn/2.0/chapter04/ 11/25
+System Message: WARNING/2 (<string>, line 1071); backlink
+{% empty %}
+<p>There are no athletes. Only computer programmers.</p>
+{% endfor %}
+注：Django不支持退出循环操作，也没有continue。有一个内置对象forloop统计当前执行次数
+forloop.counter：当前执行的次数，从1计数
+forloop.counter0：当前执行的次数，从0计数
+forloop.recounter：当前剩余多少次数
+forloop.recounter0：同上，0位结束
+forloop.first：判断当前迭代是否是第一次执行
+forloop.parentloop：父循环的计数器
+
+ifequal/ifnotequal
+{% ifequal section 'sitenews' %}
+<h1>Site News</h1>
+{% else %}
+<h1>No News Here</h1>
+{% endifequal %}
+注：只有模板变量，字符串，整数和小数可以作为 {% ifequal %} 标签的参数
+
+多行注释：
+{% comment %}
+This is a
+multi‐line comment.
+{% endcomment %}
+
+过滤器：
+{{ name|lower }}
+{{ my_list|first|upper }}
+{{ bio|truncatewords:"30" }}
+
+常见过滤器：addslashes，date，length
+
+

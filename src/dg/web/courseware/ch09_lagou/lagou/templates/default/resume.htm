@@ -1,0 +1,139 @@
+﻿$def with (tplData)
+$:tplData['render'].header(tplData)
+$ resume_info=tplData['resume_info']
+$ work_experience=tplData.get('work_experience',[])
+$ study_experience=tplData.get('study_experience',[])
+
+	<div id="wrap">
+        <form method="post" action="/resume/post" class="form">
+            <input type="hidden" name="id" value="$:resume_info.get('id', 0)">
+            <input type="hidden" name="uid" value="$:resume_info.get('uid', 0)">
+            <div class="form-group"><label >姓名：</label>
+              <input type="text" name="name" placeholder="Name" value="$:resume_info.get('name','')" class="form-control">
+            </div>
+            <div class="form-group"><label >自我描述：</label>
+              <input type="text" name="description" value="$:resume_info.get('description','')" placeholder="description" class="form-control">
+            </div>
+            <div class="form-group"><label >个人亮点：</label>
+              <input type="text" name="tag" value="$:resume_info.get('tag','')" placeholder="tag" class="form-control">
+            </div>
+            <div class="form-group"><label >学历：</label>
+              <input type="text" name="education" value="$:resume_info.get('education','')" placeholder="education" class="form-control">
+            </div>
+            <div class="form-group"><label >工作城市：</label>
+              <input type="text" name="city" value="$:resume_info.get('city','')" placeholder="city" class="form-control">
+            </div>
+            <div class="form-group"><label >手机：</label>
+              <input type="text" name="mobilephone" value="$:resume_info.get('mobilephone','')" placeholder="mobilephone" class="form-control">
+            </div>
+            <div class="form-group"><label >email：</label>
+              <input type="text" name="email" value="$:resume_info.get('email','')" placeholder="email" class="form-control">
+            </div>
+            <div class="form-group"><label >自我评价：</label>
+              <input type="text" name="self_evaluate" value="$:resume_info.get('self_evaluate','')" placeholder="self_evaluate" class="form-control">
+            </div>
+            <div class="form-group"><label >期望工作：</label>
+              <input type="text" name="hope_work" value="$:resume_info.get('hope_work','')" placeholder="hope_work" class="form-control">
+            </div>
+            <div class="form-group"><label >工作类型：</label>
+              <input type="text" name="hope_type" value="$:resume_info.get('hope_type','')" placeholder="hope_type" class="form-control">
+            </div>
+            <div class="form-group"><label >期望城市：</label>
+              <input type="text" name="hope_city" value="$:resume_info.get('hope_city','')" placeholder="hope_city" class="form-control">
+            </div>
+            <div class="form-group"><label >期望薪资：</label>
+              <input type="text" name="hope_salary" value="$:resume_info.get('hope_salary','')" placeholder="hope_salary" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success" >保存简历</button>
+        </form>
+        <h2>工作经历：</h2>
+        $for we in work_experience:
+            <form method="post" action="/resume/work" class="form">
+                <input type="hidden" name="id" value="$:we.get('id',0)">
+                <input type="hidden" name="resume_id" value="$:we.get('resume_id',0)">
+                <div class="form-group"><label >公司：</label>
+                  <input type="text" name="company_name" value="$:we.get('company_name',0)" placeholder="company_name" class="form-control">
+                </div>
+                <div class="form-group"><label >开始时间：</label>
+                  <input type="text" name="start_date" value="$:we.get('start_date',0)" placeholder="start_date" class="form-control">
+                </div>
+                <div class="form-group"><label >结束时间：</label>
+                  <input type="text" name="end_date" value="$:we.get('end_date',0)" placeholder="end_date" class="form-control">
+                </div>
+                <div class="form-group"><label >工作：</label>
+                  <input type="text" name="job" value="$:we.get('job',0)" placeholder="job" class="form-control">
+                </div>
+                <div class="form-group"><label >描述：</label>
+                  <input type="text" name="description" value="$:we.get('description',0)" placeholder="desc" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success" >保存</button>
+            </form>
+        <br/>
+        <a class="btn btn-success" href="javascript:void(0);" onclick="$$('#work_experience').show();">添加工作经历</a>
+        <form method="post" id="work_experience" action="/resume/work" class="form" style="display:none;">
+            <input type="hidden" name="id" value="0">
+            <input type="hidden" name="resume_id" value="$:resume_info.get('id', 0)">
+            <div class="form-group"><label >公司：</label>
+              <input type="text" name="company_name" placeholder="company_name" class="form-control">
+            </div>
+            <div class="form-group"><label >开始时间：</label>
+              <input type="text" name="start_date" placeholder="start_date" class="form-control">
+            </div>
+            <div class="form-group"><label >结束时间：</label>
+              <input type="text" name="end_date" placeholder="end_date" class="form-control">
+            </div>
+            <div class="form-group"><label >工作：</label>
+              <input type="text" name="job" placeholder="job" class="form-control">
+            </div>
+            <div class="form-group"><label >描述：</label>
+              <input type="text" name="description" placeholder="desc" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success" >保存</button>
+        </form>
+        <h2>教育经历：</h2>
+        $for se in study_experience:
+            <form method="post" action="/resume/study" class="form">
+                <input type="hidden" name="id" value="$:se.get('id',0)">
+                <input type="hidden" name="resume_id" value="$:se.get('resume_id',0)">
+                <div class="form-group"><label >学校：</label>
+                  <input type="text" name="school_name" value="$:se.get('school_name',0)" placeholder="school_name" class="form-control">
+                </div>
+                <div class="form-group"><label >开始时间：</label>
+                  <input type="text" name="start_date" value="$:se.get('start_date',0)" placeholder="start_date" class="form-control">
+                </div>
+                <div class="form-group"><label >结束时间：</label>
+                  <input type="text" name="end_date" value="$:se.get('end_date',0)" placeholder="end_date" class="form-control">
+                </div>
+                <div class="form-group"><label >学历：</label>
+                  <input type="text" name="educational" value="$:se.get('educational',0)" placeholder="educational" class="form-control">
+                </div>
+                <div class="form-group"><label >专业：</label>
+                  <input type="text" name="subject" value="$:se.get('subject',0)" placeholder="subject" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success" >保存</button>
+            </form>
+        <br>
+        <a class="btn btn-success" href="javascript:void(0);" onclick="$$('#edu_experience').show();">添加教育经历</a>
+        <form method="post" id="edu_experience"  action="/resume/study" class="form" style="display:none;">
+            <input type="hidden" name="id" value="0">
+            <input type="hidden" name="resume_id" value="$:resume_info.get('id', 0)">
+            <div class="form-group"><label >学校：</label>
+              <input type="text" name="school_name" placeholder="school_name" class="form-control">
+            </div>
+            <div class="form-group"><label >开始时间：</label>
+              <input type="text" name="start_date" placeholder="start_date" class="form-control">
+            </div>
+            <div class="form-group"><label >结束时间：</label>
+              <input type="text" name="end_date" placeholder="end_date" class="form-control">
+            </div>
+            <div class="form-group"><label >学历：</label>
+              <input type="text" name="educational" placeholder="educational" class="form-control">
+            </div>
+            <div class="form-group"><label >专业：</label>
+              <input type="text" name="subject" placeholder="subject" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success" >保存</button>
+        </form>
+	</div>  <!-- wrap end -->
+
+$:tplData['render'].footer(tplData)

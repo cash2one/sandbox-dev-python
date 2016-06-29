@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}发布的职位{% endblock %}
+
+{% block body %}
+
+	<div id="wrap">
+		<div id="content">
+            <h2>我发布的职位：</h2>
+            <article id="post_list">
+            {% for i in job_list %}
+                <p>{{ i.id }} => {{ i.name }} => {{ i.desc }}
+                <a href="/job/job?id={{ i.id }}">编辑</a></p>
+            {% endfor %}
+            </article>
+		</div>
+	</div>  <!-- wrap end -->
+
+{% endblock %}

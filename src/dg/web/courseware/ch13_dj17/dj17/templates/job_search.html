@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}职位搜索页{% endblock %}
+
+{% block body %}
+
+	<div id="wrap">
+		<div id="content">
+            <h2>职位搜索结果：</h2>
+            <article id="post_list">
+            {% for i in job_list %}
+                <p>{{ i.id }} => {{ i.name }} => {{ i.desc }}
+                <a id="job_{{ i.id }}" href="javascript:void(0);" onclick="job_apply({{ i.id }});">申请职位</a></p>
+            {% endfor %}
+            </article>
+		</div>
+	</div>  <!-- wrap end -->
+    <script>
+        function job_apply(job_id){
+            $.post(
+                "/job/apply",
+                {job_id:job_id},
+                function(json){
+                    if(json.errorCode==0){
+                        $('#job_'+json.job_id).hide();
+                    }
+                    alert(json.msg);
+                },
+                "json"
+            );
+        }
+    </script>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}新建职位页{% endblock %}
+
+{% block body %}
+
+	<div id="wrap">
+        <h2>职位信息：</h2>
+        <form method="post" action="/job/job" class="form">
+            <input type="hidden" name="id" value="{{ job_info.id }}">
+            <input type="hidden" name="uid" value="{{ job_info.uid.id }}">
+            <div class="form-group"><label >职位：</label>
+              <input type="text" name="name" placeholder="Name" value="{{ job_info.name }}" class="form-control">
+            </div>
+            <div class="form-group"><label >薪资：</label>
+              <input type="text" name="scale" value="{{ job_info.scale }}" placeholder="scale" class="form-control">
+            </div>
+            <div class="form-group"><label >工作经验：</label>
+              <input type="text" name="experience" value="{{ job_info.experience }}" placeholder="experience" class="form-control">
+            </div>
+            <div class="form-group"><label >工作城市：</label>
+              <input type="text" name="city" value="{{ job_info.city }}" placeholder="city" class="form-control">
+            </div>
+            <div class="form-group"><label >工作类型：</label>
+              <input type="text" name="type" value="{{ job_info.type }}" placeholder="type" class="form-control">
+            </div>
+            <div class="form-group"><label >学历：</label>
+              <input type="text" name="educational" value="{{ job_info.educational }}" placeholder="educational" class="form-control">
+            </div>
+            <div class="form-group"><label >标签：</label>
+              <input type="text" name="tag" value="{{ job_info.tag }}" placeholder="tag" class="form-control">
+            </div>
+            <div class="form-group"><label >描述：</label>
+              <input type="text" name="desc" value="{{ job_info.desc }}" placeholder="desc" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success" >保存职位</button>
+        </form>
+    </div>
+
+{% endblock %}

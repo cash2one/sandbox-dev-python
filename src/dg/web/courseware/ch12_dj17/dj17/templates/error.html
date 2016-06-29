@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}错误页{% endblock %}
+
+{% block body %}
+<div class="alertBox">
+    <a href="javascript:location.href='{{ url }}';">{{ msg }} (<font id="percent">5</font>秒后跳转，点击马上跳转）</a>
+</div>
+
+<script language="javascript">
+    var bar=5;
+    function count(){
+        bar=bar-1 ;
+        document.getElementById("percent").innerHTML=bar;
+        if (bar>0){
+            setTimeout("count()",1000);
+        }else{
+            history.go(-1)
+        }
+    }
+    count() ;
+</script>
+{% endblock %}

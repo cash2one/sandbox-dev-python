@@ -1,0 +1,19 @@
+﻿$def with (tplData)
+$:tplData['render'].header(tplData)
+	<div id="wrap">
+        <div class="jumbotron">
+        $if tplData['group_info']:
+            <h1>当前小组：$:tplData['group_info']['name']</h1>
+            <p>$:tplData['group_info']['description']</p>
+        $if session.login:
+            <div><a href="/forum/new?gid=$:tplData['group_info']['id']">发帖</a></div>
+        </div>
+        <div>
+            <ul>
+                $for i in tplData['forum_list']:
+                    <li>$:i['id'] => $:i['title'] <a href="/forum/view?id=$:i['id']">查看帖子</a></li>
+            </ul>
+        </div>
+	</div>  <!-- wrap end -->
+
+$:tplData['render'].footer(tplData)

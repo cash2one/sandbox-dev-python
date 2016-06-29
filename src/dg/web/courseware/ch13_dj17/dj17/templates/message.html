@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}消息中心页{% endblock %}
+
+{% block body %}
+
+	<div id="wrap">
+		<div id="content">
+            <article id="job_apply"><h1>职位申请消息</h1>
+            {% for i in job_apply %}
+                <p> {{ i.id }} => 是否已读：{{ i.is_read }} => 申请者id：{{ i.send_uid.id }}  => 申请职位id：{{ i.job_id }}
+                {% if not i.is_read %}
+                    =><a target="_blank" href="/job/feedback?job_id={{ i.job_id }}&uid={{ i.send_uid.id }}">回执</a>
+                {% endif %}
+                </p>
+            {% endfor %}
+            </article>
+            <article id="job_feedback"><h1>简历回执消息</h1>
+            {% for i in job_feedback %}
+                <p>{{ i.id }} => 是否已读：{{ i.is_read }} => 申请者id：{{ i.content }}  => 申请职位id：{{ i.job_id }} </p>
+            {% endfor %}
+            </article>
+		</div>
+	</div>  <!-- wrap end -->
+
+{% endblock %}

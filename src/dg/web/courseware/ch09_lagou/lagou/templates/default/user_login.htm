@@ -1,0 +1,11 @@
+﻿$def with (tplData)
+$:tplData['render'].header(tplData)
+	<div id="wrap">
+        <div id="content">
+            <article id="post_list">
+                <p>$:tplData['msg']</p>
+            </article>
+        </div>
+	</div>  <!-- wrap end -->
+
+$:tplData['render'].footer(tplData)

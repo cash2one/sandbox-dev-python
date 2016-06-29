@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}公司信息页{% endblock %}
+
+{% block body %}
+	<div id="wrap">
+        <h2>基本信息：</h2>
+        <form method="post" action="/job/company" class="form">
+            <input type="hidden" name="id" value="{{ company_info.id }}">
+            <input type="hidden" name="uid" value="{{ company_info.uid }}">
+            <div class="form-group"><label >公司名称：</label>
+              <input type="text" name="name" value="{{ company_info.name }}" placeholder="Name" class="form-control">
+            </div>
+            <div class="form-group"><label >城市：</label>
+              <input type="text" name="city" value="{{ company_info.city }}" placeholder="city" class="form-control">
+            </div>
+            <div class="form-group"><label >发展阶段：</label>
+              <input type="text" name="stage" value="{{ company_info.stage }}" placeholder="stage" class="form-control">
+            </div>
+            <div class="form-group"><label >标签：</label>
+              <input type="text" name="tag" value="{{ company_info.tag }}" placeholder="tag" class="form-control">
+            </div>
+            <div class="form-group"><label >公司规模：</label>
+              <input type="text" name="people_num" value="{{ company_info.people_num }}" placeholder="people_num" class="form-control">
+            </div>
+            <div class="form-group"><label >公司主页：</label>
+              <input type="text" name="home_url" value="{{ company_info.home_url }}" placeholder="home_url" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success" >保存</button>
+        </form>
+        <h2>Logo上传：</h2>
+        {% if company_info %}
+            {% if company_info.logo %}
+                <div><img src="/static/upload/{{ company_info.logo }}" /></div>
+            {% else %}
+                <h4>你还没有上传logo</h4>
+            {% endif %}
+        {% endif %}
+        <form method="post" action="/job/upload" enctype="multipart/form-data" >
+            {{uf.as_p}}
+            <button type="submit" class="btn btn-success" >保存</button>
+        </form>
+
+	</div>  <!-- wrap end -->
+{% endblock %}

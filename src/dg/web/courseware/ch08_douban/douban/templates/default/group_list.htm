@@ -1,0 +1,15 @@
+﻿$def with (tplData)
+$:tplData['render'].header(tplData)
+	<div id="wrap">
+		<!-- 轮播主题  -->
+		<div id="content">
+            <article id="post_list">
+            $for i in tplData['groups']:
+                <p>$:i['id'] => $:i['name']
+                <a href="/group/view?id=$i['id']">进入小组</a>
+                </p>
+            </article>
+		</div>
+	</div>  <!-- wrap end -->
+
+$:tplData['render'].footer(tplData)

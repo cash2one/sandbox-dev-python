@@ -1,0 +1,19 @@
+﻿{% extends "base.html" %}
+
+{% block title %}简历搜索结果页{% endblock %}
+
+{% block body %}
+
+	<div id="wrap">
+		<div id="content">
+            <h2>简历搜索结果：</h2>
+            <article id="post_list">
+            {% for i in resume_list %}
+                <p>{{ i.id }} => {{ i.name }} => {{ i.hope_work }}</p>
+            {% endfor %}
+            </article>
+		</div>
+	</div>  <!-- wrap end -->
+
+{% endblock %}
+
