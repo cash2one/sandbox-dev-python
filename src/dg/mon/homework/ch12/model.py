@@ -33,9 +33,11 @@ def update_post(id, title, text):
         title = title,
         content = text)
 
-
+# 取得文章的评论
 def get_comments_by_blog(blog_id):
     return db.select('comment', where = 'blog_id=$blog_id', vars = locals(), order = 'id DESC')
+
+# 新加入评论
 def new_comment(title, text, blog_id):
     db.insert('comment',
         blog_id = blog_id,

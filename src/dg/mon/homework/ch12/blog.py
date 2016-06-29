@@ -23,12 +23,14 @@ t_globals = {
 }
 #指定模板目录，并设定公共模板
 render = web.template.render('templates', base='base', globals=t_globals)
+
 #创建登录表单
 login = web.form.Form(
                       web.form.Textbox('username'),
                       web.form.Password('password'),
                       web.form.Button('login')
                       )
+
 #首页类
 class Index:
     def GET(self):
@@ -42,6 +44,7 @@ class Index:
                 and login_form.d.password == 'admin':
                 web.setcookie('username', login_form.d.username)
         raise web.seeother('/')
+
 #查看文章类
 class View:
     def GET(self, id):
@@ -51,6 +54,7 @@ class View:
         # return render.view(post)
         comments = model.get_comments_by_blog(id)
         return render.view(post, comments)
+
 #新建文章类
 class New:
     form = web.form.Form(
@@ -74,11 +78,13 @@ class New:
             return render.new(form)
         model.new_post(form.d.title, form.d.content)
         raise web.seeother('/')
+
 #删除文章类
 class Delete:
     def GET(self, id):
         model.del_post(int(id))
         raise web.seeother('/')
+
 #编辑文章类
 class Edit:
     def GET(self, id):
@@ -93,11 +99,13 @@ class Edit:
             return render.edit(post, form)
         model.update_post(int(id), form.d.title, form.d.content)
         raise web.seeother('/')
+
 #退出登录
 class Logout:
     def GET(self):
         web.setcookie('username', '', expires=-1)
         raise web.seeother('/')
+
 #定义404错误显示内容
 def notfound():
     return web.notfound("Sorry, the page you were looking for was not found.")
