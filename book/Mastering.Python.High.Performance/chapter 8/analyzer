@@ -1,0 +1,2165 @@
+events: Ticks
+summary: 1261
+fn=<method 'reverse' of 'list' objects>
+0 0
+
+fl=analyzer-profiled.py
+fn=get_most_active_users
+19 0
+cfn=<sorted>
+calls=1 0
+19 0
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+19 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=opengroup
+74 0
+cfn=<method 'get' of 'dict' objects>
+calls=7 0
+74 0
+cfn=<method 'append' of 'list' objects>
+calls=37 0
+74 0
+
+fn=<open>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/re.py
+fn=escape
+208 0
+cfn=<method 'join' of 'unicode' objects>
+calls=1 0
+208 0
+
+fn=<method 'islower' of 'unicode' objects>
+0 0
+
+fl=analyzer-profiled.py
+fn=get_most_active_topics
+32 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/__init__.py
+cfn=word_tokenize
+calls=100 90
+32 18
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tag/__init__.py
+cfn=pos_tag
+calls=100 86
+32 985
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tree.py
+cfn=subtrees
+calls=424 317
+32 1
+cfn=<sorted>
+calls=1 0
+32 0
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+32 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/__init__.py
+cfn=sent_tokenize
+calls=1 75
+32 24
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=parse
+calls=100 1182
+32 8
+cfl=analyzer-profiled.py
+cfn=get_node_content
+calls=324 28
+32 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=__init__
+calls=1 1107
+32 1
+cfl=analyzer-profiled.py
+cfn=flatten_questions_titles
+calls=1 81
+32 0
+
+fn=<method 'split' of 'str' objects>
+0 1
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+fn=_optimize_charset
+256 0
+cfn=<method 'find' of 'bytearray' objects>
+calls=179 0
+256 0
+cfn=<method 'append' of 'list' objects>
+calls=135 0
+256 0
+cfn=<len>
+calls=169 0
+256 0
+cfn=<range>
+calls=8 0
+256 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+cfn=_mk_bitmap
+calls=13 411
+256 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=_pair_iter
+303 2
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_slices_from_text
+calls=1616 1276
+303 41
+cfn=<next>
+calls=1648 0
+303 29
+cfn=<iter>
+calls=1648 0
+303 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_annotate_first_pass
+calls=2096 560
+303 12
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tag/sequential.py
+fn=tag
+57 1
+cfn=<zip>
+calls=100 0
+57 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tag/sequential.py
+cfn=tag_one
+calls=1117 64
+57 691
+cfn=<method 'append' of 'list' objects>
+calls=1117 0
+57 0
+cfn=<len>
+calls=100 0
+57 0
+cfn=<range>
+calls=100 0
+57 0
+
+fn=<method 'lower' of 'unicode' objects>
+0 2
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=getwidth
+151 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=getwidth
+calls=91 151
+151 0
+cfn=<max>
+calls=26 0
+151 0
+cfn=<min>
+calls=302 0
+151 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/probability.py
+fn=sum_logs
+1990 1
+cfn=<_functools.reduce>
+calls=1117 0
+1990 91
+cfn=<len>
+calls=1117 0
+1990 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tag/sequential.py
+fn=choose_tag
+632 1
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tag/sequential.py
+cfn=feature_detector
+calls=1117 697
+632 17
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/classify/maxent.py
+cfn=classify
+calls=1117 142
+632 671
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+fn=_compile_charset
+228 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+cfn=_optimize_charset
+calls=53 256
+228 0
+cfn=<method 'extend' of 'list' objects>
+calls=13 0
+228 0
+cfn=<method 'append' of 'list' objects>
+calls=189 0
+228 0
+
+fl=/home/fernando/miniconda/lib/python2.7/re.py
+fn=_subx
+284 7
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=_compile_repl
+calls=17921 264
+284 9
+cfn=<len>
+calls=1 0
+284 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=__init__
+924 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=__init__
+189 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__next
+calls=61 193
+189 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=_slices_from_text
+1276 18
+cfn=<method 'group' of '_sre.SRE_Match' objects>
+calls=2524 0
+1276 0
+cfn=<method 'start' of '_sre.SRE_Match' objects>
+calls=776 0
+1276 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=period_context_re
+calls=796 274
+1276 1
+cfn=<method 'finditer' of '_sre.SRE_Pattern' objects>
+calls=796 0
+1276 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=text_contains_sentbreak
+calls=852 1320
+1276 36
+cfn=<len>
+calls=796 0
+1276 0
+cfn=<method 'end' of '_sre.SRE_Match' objects>
+calls=864 0
+1276 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=fromstring
+337 0
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=match
+calls=1 138
+337 0
+cfn=<method 'strip' of 'unicode' objects>
+calls=2 0
+337 0
+cfn=<method 'group' of '_sre.SRE_Match' objects>
+calls=2 0
+337 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=__init__
+calls=1 393
+337 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=tell
+216 0
+
+fl=/home/fernando/miniconda/lib/python2.7/re.py
+fn=match
+138 2
+cfn=<method 'match' of '_sre.SRE_Pattern' objects>
+calls=4124 0
+138 2
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=_compile
+calls=4124 230
+138 4
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=_ortho_heuristic
+1546 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=first_lower
+calls=32 439
+1546 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=type_no_sentperiod
+calls=32 424
+1546 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=first_upper
+calls=32 434
+1546 0
+
+fn=<method 'format' of 'str' objects>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+fn=_simple
+428 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=getwidth
+calls=38 151
+428 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__getitem__
+calls=30 141
+428 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/classify/maxent.py
+fn=encode
+521 384
+cfn=<method 'items' of 'dict' objects>
+calls=51382 0
+521 16
+cfn=<method 'append' of 'list' objects>
+calls=229079 0
+521 14
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+fn=_open
+877 0
+cfn=<method 'lower' of 'unicode' objects>
+calls=2 0
+877 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+cfn=normalize_resource_url
+calls=2 133
+877 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+cfn=split_resource_url
+calls=2 107
+877 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+cfn=find
+calls=2 528
+877 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+cfn=open
+calls=2 304
+877 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+fn=isstring
+546 0
+cfn=<isinstance>
+calls=114 0
+546 0
+
+fl=analyzer-profiled.py
+fn=<lambda>
+42 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tree.py
+cfn=label
+calls=424 204
+42 0
+
+fn=<method 'match' of '_sre.SRE_Pattern' objects>
+0 3
+
+fl=/home/fernando/miniconda/lib/python2.7/posixpath.py
+fn=join
+61 0
+cfn=<method 'startswith' of 'unicode' objects>
+calls=2 0
+61 0
+cfn=<method 'endswith' of 'str' objects>
+calls=2 0
+61 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tag/sequential.py
+fn=feature_detector
+697 7
+cfn=<method 'lower' of 'unicode' objects>
+calls=9753 0
+697 1
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=match
+calls=4120 138
+697 8
+
+fn=<method 'extend' of 'list' objects>
+0 0
+
+fl=analyzer-profiled.py
+fn=get_most_answered_questions
+64 0
+cfn=<sorted>
+calls=1 0
+64 0
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+64 0
+cfn=<len>
+calls=100 0
+64 0
+
+fn=<method 'strip' of 'unicode' objects>
+0 0
+
+fn=<method 'groups' of '_sre.SRE_Match' objects>
+0 0
+
+fn=<setattr>
+0 3
+
+fn=<method 'endswith' of 'unicode' objects>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/posixpath.py
+fn=normpath
+329 2
+cfn=<method 'split' of 'str' objects>
+calls=896 0
+329 0
+cfn=<method 'split' of 'unicode' objects>
+calls=6 0
+329 0
+cfn=<method 'append' of 'list' objects>
+calls=2712 0
+329 0
+cfn=<method 'startswith' of 'unicode' objects>
+calls=8 0
+329 0
+cfn=<method 'join' of 'str' objects>
+calls=896 0
+329 0
+cfn=<isinstance>
+calls=902 0
+329 0
+cfn=<method 'join' of 'unicode' objects>
+calls=6 0
+329 0
+cfn=<method 'startswith' of 'str' objects>
+calls=896 0
+329 0
+
+fn=<method 'split' of 'unicode' objects>
+0 2
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tree.py
+fn=label
+204 0
+
+fl=/home/fernando/miniconda/lib/python2.7/stat.py
+fn=S_ISDIR
+40 0
+cfl=/home/fernando/miniconda/lib/python2.7/stat.py
+cfn=S_IFMT
+calls=2 24
+40 0
+
+fn=<zip>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=reverse_str
+886 0
+cfn=<method 'reverse' of 'list' objects>
+calls=3 0
+886 0
+cfn=<method 'join' of 'unicode' objects>
+calls=3 0
+886 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=__init__
+92 0
+
+fl=/home/fernando/miniconda/lib/python2.7/urllib.py
+fn=url2pathname
+53 0
+cfl=/home/fernando/miniconda/lib/python2.7/urllib.py
+cfn=unquote
+calls=2 1225
+53 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=__init__
+67 0
+
+fn=<method 'split' of '_sre.SRE_Pattern' objects>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=_first_pass_annotation
+581 2
+cfn=<method 'lower' of 'unicode' objects>
+calls=1002 0
+581 0
+cfn=<method 'endswith' of 'unicode' objects>
+calls=513 0
+581 0
+cfn=<method 'split' of 'unicode' objects>
+calls=489 0
+581 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=is_ellipsis
+calls=1703 452
+581 1
+
+fl=/home/fernando/miniconda/lib/python2.7/urllib.py
+fn=_is_unicode
+1058 0
+cfn=<isinstance>
+calls=2 0
+1058 0
+
+fn=<method 'count' of 'unicode' objects>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/re.py
+fn=_compile
+230 12
+cfl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+cfn=isstring
+calls=37 546
+230 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+cfn=compile
+calls=37 567
+230 7
+cfn=<len>
+calls=37 0
+230 0
+cfn=<isinstance>
+calls=237 0
+230 0
+
+fl=/home/fernando/miniconda/lib/python2.7/re.py
+fn=compile
+192 0
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=_compile
+calls=4 230
+192 4
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=span_tokenize
+1257 1
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_realign_boundaries
+calls=2400 1290
+1257 62
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+fn=__init__
+283 0
+cfl=/home/fernando/miniconda/lib/python2.7/genericpath.py
+cfn=exists
+calls=2 23
+283 0
+cfl=/home/fernando/miniconda/lib/python2.7/posixpath.py
+cfn=abspath
+calls=2 358
+283 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/probability.py
+fn=__init__
+535 13
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/probability.py
+cfn=sum_logs
+calls=1117 1990
+535 92
+cfn=<method 'items' of 'dict' objects>
+calls=1117 0
+535 1
+cfn=<method 'values' of 'dict' objects>
+calls=1117 0
+535 0
+cfn=<len>
+calls=1117 0
+535 0
+cfn=<method 'copy' of 'dict' objects>
+calls=1117 0
+535 1
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/treebank.py
+fn=tokenize
+62 7
+cfn=<method 'split' of 'unicode' objects>
+calls=810 0
+62 1
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=sub
+calls=12960 148
+62 71
+cfn=<method 'sub' of '_sre.SRE_Pattern' objects>
+calls=8100 0
+62 34
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+fn=normalize_resource_url
+133 3
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+cfn=split_resource_url
+calls=898 107
+133 2
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+cfn=normalize_resource_name
+calls=898 188
+133 14
+cfl=/home/fernando/miniconda/lib/python2.7/posixpath.py
+cfn=isabs
+calls=898 52
+133 0
+cfn=<method 'join' of 'unicode' objects>
+calls=898 0
+133 0
+
+fn=<method 'group' of '_sre.SRE_Match' objects>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/re.py
+fn=search
+143 0
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=_compile
+calls=900 230
+143 0
+cfn=<method 'search' of '_sre.SRE_Pattern' objects>
+calls=900 0
+143 1
+
+fl=/home/fernando/miniconda/lib/python2.7/string.py
+fn=lower
+222 0
+cfn=<method 'lower' of 'unicode' objects>
+calls=100 0
+222 0
+
+fl=/home/fernando/miniconda/lib/python2.7/stat.py
+fn=S_IFMT
+24 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/__init__.py
+fn=word_tokenize
+90 1
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/treebank.py
+cfn=tokenize
+calls=810 62
+90 114
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/__init__.py
+cfn=sent_tokenize
+calls=794 75
+90 41
+
+fl=/home/fernando/miniconda/lib/python2.7/stat.py
+fn=S_ISREG
+49 0
+cfl=/home/fernando/miniconda/lib/python2.7/stat.py
+cfn=S_IFMT
+calls=2 24
+49 0
+
+fn=<method 'find' of 'bytearray' objects>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=_verify
+108 0
+cfn=<method 'match' of '_sre.SRE_Pattern' objects>
+calls=200 0
+108 0
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=split
+calls=100 168
+108 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=_tag
+calls=1117 99
+108 0
+cfn=<method 'sub' of '_sre.SRE_Pattern' objects>
+calls=100 0
+108 0
+cfn=<len>
+calls=100 0
+108 0
+cfn=<range>
+calls=100 0
+108 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=_annotate_second_pass
+1454 1
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_pair_iter
+calls=2948 303
+1454 30
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_second_pass_annotation
+calls=2096 1464
+1454 2
+
+fl=/home/fernando/miniconda/lib/python2.7/re.py
+fn=sub
+148 7
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=_compile
+calls=14164 230
+148 10
+cfn=<method 'sub' of '_sre.SRE_Pattern' objects>
+calls=14164 0
+148 59
+
+fn=<next>
+0 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_slices_from_text
+calls=796 1276
+0 16
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_annotate_first_pass
+calls=852 560
+0 16
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=__init__
+393 0
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=compile
+calls=1 192
+393 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=tag_pattern2re_pattern
+calls=1 835
+393 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=__init__
+calls=1 274
+393 0
+
+fl=analyzer-profiled.py
+fn=get_most_helpful_user
+52 0
+cfn=<sorted>
+calls=1 0
+52 0
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+52 0
+
+fl=analyzer-profiled.py
+fn=flatten_questions_body
+73 0
+cfn=<method 'append' of 'list' objects>
+calls=100 0
+73 0
+cfn=<method 'join' of 'str' objects>
+calls=1 0
+73 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/probability.py
+fn=max
+589 2
+cfn=<max>
+calls=1117 0
+589 14
+cfn=<method 'items' of 'dict' objects>
+calls=1117 0
+589 1
+cfn=<hasattr>
+calls=1117 0
+589 1
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tag/__init__.py
+fn=pos_tag
+86 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tag/sequential.py
+cfn=tag
+calls=100 57
+86 693
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+cfn=load
+calls=100 699
+86 292
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+fn=split_resource_url
+107 1
+cfn=<method 'split' of 'str' objects>
+calls=896 0
+107 0
+cfn=<method 'split' of 'unicode' objects>
+calls=4 0
+107 0
+
+fn=<max>
+0 7
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/probability.py
+cfn=<genexpr>
+calls=52499 591
+0 6
+
+fn=<all>
+0 4
+cfl=analyzer-profiled.py
+cfn=<genexpr>
+calls=47856 97
+0 14
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+fn=_compile
+64 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+cfn=_compile_charset
+calls=45 228
+64 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+cfn=_simple
+calls=38 428
+64 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+cfn=_compile
+calls=137 64
+64 1
+cfn=<method 'get' of 'dict' objects>
+calls=2 0
+64 0
+cfn=<method 'append' of 'list' objects>
+calls=885 0
+64 0
+cfn=<len>
+calls=366 0
+64 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__getitem__
+calls=328 141
+64 0
+
+fl=/home/fernando/miniconda/lib/python2.7/copy_reg.py
+fn=_reconstructor
+46 0
+cfn=<built-in method __new__ of type object at 0x7fc28359abc0>
+calls=3 0
+46 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tree.py
+fn=subtrees
+317 0
+cfl=analyzer-profiled.py
+cfn=<lambda>
+calls=424 42
+317 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tree.py
+cfn=subtrees
+calls=648 317
+317 0
+cfn=<isinstance>
+calls=1441 0
+317 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=__setitem__
+145 0
+
+fn=<sorted>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=_word_tokenizer_re
+242 0
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=compile
+calls=1 192
+242 2
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=append
+149 0
+cfn=<method 'append' of 'list' objects>
+calls=228 0
+149 0
+
+fn=<_functools.reduce>
+0 8
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/probability.py
+cfn=add_logs
+calls=50265 1976
+0 83
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+fn=load
+699 3
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+cfn=_open
+calls=2 877
+699 0
+cfn=<method 'split' of 'unicode' objects>
+calls=896 0
+699 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+cfn=normalize_resource_url
+calls=896 133
+699 21
+cfn=<method 'get' of 'dict' objects>
+calls=1792 0
+699 0
+cfn=<cPickle.load>
+calls=2 0
+699 303
+cfn=<method 'close' of 'file' objects>
+calls=2 0
+699 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/compat.py
+cfn=add_py3_data
+calls=896 375
+699 0
+
+fl=/home/fernando/miniconda/lib/python2.7/genericpath.py
+fn=isfile
+34 0
+cfl=/home/fernando/miniconda/lib/python2.7/stat.py
+cfn=S_ISREG
+calls=2 49
+34 0
+cfn=<posix.stat>
+calls=2 0
+34 0
+
+fl=/home/fernando/miniconda/lib/python2.7/re.py
+fn=split
+168 0
+cfn=<method 'split' of '_sre.SRE_Pattern' objects>
+calls=200 0
+168 0
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=_compile
+calls=200 230
+168 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=type_no_period
+415 0
+cfn=<len>
+calls=700 0
+415 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tag/sequential.py
+fn=tag_one
+64 1
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tag/sequential.py
+cfn=choose_tag
+calls=1117 632
+64 690
+
+fl=analyzer-profiled.py
+fn=get_most_common_phrases
+91 11
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/__init__.py
+cfn=word_tokenize
+calls=694 90
+91 138
+cfl=analyzer-profiled.py
+cfn=flatten_questions_body
+calls=1 73
+91 0
+cfn=<all>
+calls=11085 0
+91 19
+cfn=<sorted>
+calls=1 0
+91 0
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+91 0
+cfl=analyzer-profiled.py
+cfn=<genexpr>
+calls=3213 97
+91 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/__init__.py
+cfn=sent_tokenize
+calls=1 75
+91 38
+cfn=<method 'join' of 'str' objects>
+calls=7872 0
+91 2
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/util.py
+cfn=ngrams
+calls=11779 383
+91 7
+
+fl=/home/fernando/miniconda/lib/python2.7/re.py
+fn=filter
+290 1
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=expand_template
+calls=2214 822
+290 4
+
+fn=<method 'start' of '_sre.SRE_Match' objects>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=_parse
+395 1
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=opengroup
+calls=37 74
+395 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=tell
+calls=9 216
+395 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__init__
+calls=122 92
+395 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__setitem__
+calls=38 145
+395 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=append
+calls=211 149
+395 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=_escape
+calls=48 268
+395 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=match
+calls=374 206
+395 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=_class_escape
+calls=51 236
+395 0
+cfn=<method 'append' of 'list' objects>
+calls=140 0
+395 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=closegroup
+calls=37 85
+395 0
+cfn=<ord>
+calls=141 0
+395 0
+cfn=<len>
+calls=108 0
+395 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__getitem__
+calls=114 141
+395 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=get
+calls=1113 212
+395 1
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__len__
+calls=114 137
+395 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=_parse_sub
+calls=52 317
+395 3
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=isname
+calls=7 227
+395 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=is_ellipsis
+452 0
+cfn=<method 'match' of '_sre.SRE_Pattern' objects>
+calls=1703 0
+452 0
+
+fn=<_sre.compile>
+0 0
+
+fn=<method 'get' of 'dict' objects>
+0 3
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=period_context_re
+274 0
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=compile
+calls=1 192
+274 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_re_sent_end_chars
+calls=1 204
+274 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=_read_grammar
+1142 0
+cfn=<method 'split' of 'str' objects>
+calls=1 0
+1142 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=fromstring
+calls=1 337
+1142 1
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=match
+calls=1 138
+1142 0
+cfn=<method 'strip' of 'unicode' objects>
+calls=3 0
+1142 0
+cfn=<method 'group' of '_sre.SRE_Match' objects>
+calls=2 0
+1142 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=_add_stage
+calls=2 1171
+1142 0
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+1142 0
+cfn=<method 'startswith' of 'unicode' objects>
+calls=1 0
+1142 0
+
+fn=<method 'remove' of 'list' objects>
+0 0
+
+fn=<cPickle.load>
+0 303
+cfl=/home/fernando/miniconda/lib/python2.7/copy_reg.py
+cfn=_reconstructor
+calls=3 46
+0 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=__setstate__
+calls=1 198
+0 0
+
+fl=analyzer-profiled.py
+fn=analyze_data
+128 0
+cfl=analyzer-profiled.py
+cfn=get_most_active_users
+calls=1 19
+128 0
+cfl=analyzer-profiled.py
+cfn=get_most_active_topics
+calls=1 32
+128 1042
+cfl=analyzer-profiled.py
+cfn=get_most_answered_questions
+calls=1 64
+128 0
+cfl=analyzer-profiled.py
+cfn=get_most_helpful_user
+calls=1 52
+128 0
+cfl=analyzer-profiled.py
+cfn=get_most_common_phrases
+calls=1 91
+128 219
+cfl=analyzer-profiled.py
+cfn=get_shortest_answer
+calls=1 107
+128 0
+
+fn=<method 'finditer' of '_sre.SRE_Pattern' objects>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=_tag
+99 0
+cfn=<isinstance>
+calls=2234 0
+99 0
+
+fn=<method 'search' of '_sre.SRE_Pattern' objects>
+0 1
+
+fn=<min>
+0 6
+
+fn=<iter>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=_escape
+268 0
+cfn=<method 'get' of 'dict' objects>
+calls=81 0
+268 0
+cfn=<ord>
+calls=29 0
+268 0
+cfn=<len>
+calls=29 0
+268 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=_annotate_tokens
+1356 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+fn=find
+528 0
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=match
+calls=2 138
+528 0
+cfl=/home/fernando/miniconda/lib/python2.7/posixpath.py
+cfn=join
+calls=2 61
+528 0
+cfn=<method 'groups' of '_sre.SRE_Match' objects>
+calls=2 0
+528 0
+cfn=<method 'endswith' of 'unicode' objects>
+calls=2 0
+528 0
+cfl=/home/fernando/miniconda/lib/python2.7/urllib.py
+cfn=url2pathname
+calls=2 53
+528 0
+cfl=/home/fernando/miniconda/lib/python2.7/genericpath.py
+cfn=isfile
+calls=2 34
+528 0
+cfl=/home/fernando/miniconda/lib/python2.7/genericpath.py
+cfn=isdir
+calls=2 46
+528 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+cfn=normalize_resource_name
+calls=2 188
+528 0
+cfl=/home/fernando/miniconda/lib/python2.7/genericpath.py
+cfn=exists
+calls=2 23
+528 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/compat.py
+cfn=_decorator
+calls=2 389
+528 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=match
+206 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__next
+calls=171 193
+206 0
+
+fn=<built-in method __new__ of type object at 0x7fc28359abc0>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/classify/maxent.py
+fn=prob_classify
+145 124
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/classify/maxent.py
+cfn=encode
+calls=51382 521
+145 415
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/probability.py
+cfn=__init__
+calls=1117 535
+145 109
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/classify/maxent.py
+cfn=labels
+calls=1117 573
+145 0
+
+fl=/home/fernando/miniconda/lib/python2.7/genericpath.py
+fn=isdir
+46 0
+cfl=/home/fernando/miniconda/lib/python2.7/stat.py
+cfn=S_ISDIR
+calls=2 40
+46 0
+cfn=<posix.stat>
+calls=2 0
+46 0
+
+fn=<method 'items' of 'dict' objects>
+0 19
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=first_lower
+439 0
+cfn=<method 'islower' of 'unicode' objects>
+calls=32 0
+439 0
+
+fn=<method 'sub' of '_sre.SRE_Pattern' objects>
+0 72
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=_subx
+calls=17921 284
+0 17
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=filter
+calls=2214 290
+0 5
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=parse
+987 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tree.py
+cfn=__init__
+calls=100 96
+987 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=__init__
+calls=100 72
+987 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=to_chunkstruct
+calls=100 147
+987 4
+cfn=<len>
+calls=100 0
+987 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=_notrace_apply
+calls=100 973
+987 2
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tree.py
+fn=__init__
+96 0
+cfn=<isinstance>
+calls=524 0
+96 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=__init__
+72 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tree.py
+cfn=label
+calls=100 204
+72 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=_tag
+calls=1117 99
+72 0
+cfn=<method 'join' of 'unicode' objects>
+calls=100 0
+72 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=to_chunkstruct
+147 0
+cfn=<method 'count' of 'unicode' objects>
+calls=748 0
+147 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=_verify
+calls=100 108
+147 2
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=split
+calls=100 168
+147 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tree.py
+cfn=__init__
+calls=424 96
+147 0
+cfn=<method 'append' of 'list' objects>
+calls=324 0
+147 0
+
+fn=<posix.stat>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+fn=normalize_resource_name
+188 3
+cfn=<method 'endswith' of 'unicode' objects>
+calls=4 0
+188 0
+cfl=/home/fernando/miniconda/lib/python2.7/posixpath.py
+cfn=normpath
+calls=900 329
+188 4
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=search
+calls=900 143
+188 2
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=sub
+calls=900 148
+188 2
+cfn=<method 'replace' of 'str' objects>
+calls=896 0
+188 0
+cfn=<method 'endswith' of 'str' objects>
+calls=896 0
+188 0
+cfn=<method 'replace' of 'unicode' objects>
+calls=904 0
+188 0
+cfn=<method 'startswith' of 'str' objects>
+calls=1800 0
+188 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=xform
+179 0
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=sub
+calls=200 148
+179 2
+
+fn=<hasattr>
+0 1
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+fn=open
+304 0
+cfn=<open>
+calls=2 0
+304 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=_get_type
+411 1
+cfn=<method 'lower' of 'unicode' objects>
+calls=2184 0
+411 0
+cfn=<method 'sub' of '_sre.SRE_Pattern' objects>
+calls=2184 0
+411 1
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=_class_escape
+236 0
+cfn=<method 'get' of 'dict' objects>
+calls=100 0
+236 0
+cfn=<ord>
+calls=48 0
+236 0
+cfn=<len>
+calls=48 0
+236 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=_re_sent_end_chars
+204 0
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=escape
+calls=1 208
+204 0
+cfn=<method 'join' of 'unicode' objects>
+calls=1 0
+204 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=_second_pass_annotation
+1464 1
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_ortho_heuristic
+calls=36 1546
+1464 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=type_no_period
+calls=650 415
+1464 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=is_initial
+calls=650 462
+1464 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=type_no_sentperiod
+calls=650 424
+1464 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=first_upper
+calls=32 434
+1464 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=is_initial
+462 0
+cfn=<method 'match' of '_sre.SRE_Pattern' objects>
+calls=650 0
+462 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=__next
+193 1
+cfn=<len>
+calls=2887 0
+193 0
+
+fn=<method 'values' of 'dict' objects>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=_add_stage
+1171 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=__init__
+calls=1 924
+1171 0
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+1171 0
+
+fl=analyzer-profiled.py
+fn=<genexpr>
+97 14
+
+fn=<method 'append' of 'list' objects>
+0 16
+
+fl=/home/fernando/miniconda/lib/python2.7/re.py
+fn=_compile_repl
+264 6
+cfn=<method 'get' of 'dict' objects>
+calls=17921 0
+264 2
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=parse_template
+calls=24 734
+264 0
+cfn=<len>
+calls=24 0
+264 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=parse_template
+734 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__init__
+calls=24 189
+734 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=match
+calls=4 206
+734 0
+cfn=<method 'append' of 'list' objects>
+calls=78 0
+734 0
+cfn=<len>
+calls=24 0
+734 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=get
+calls=141 212
+734 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=literal
+calls=66 741
+734 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=isname
+calls=1 227
+734 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=text_contains_sentbreak
+1320 1
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_annotate_second_pass
+calls=2948 1454
+1320 34
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_annotate_tokens
+calls=852 1356
+1320 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_annotate_first_pass
+calls=88 560
+1320 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_tokenize_words
+calls=88 533
+1320 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=type_no_sentperiod
+424 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=type_no_period
+calls=50 415
+424 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/classify/maxent.py
+fn=classify
+142 2
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/probability.py
+cfn=max
+calls=1117 589
+142 18
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/classify/maxent.py
+cfn=prob_classify
+calls=1117 145
+142 649
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=tag_pattern2re_pattern
+835 0
+cfn=<method 'match' of '_sre.SRE_Pattern' objects>
+calls=1 0
+835 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=reverse_str
+calls=3 886
+835 0
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=sub
+calls=4 148
+835 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=isident
+221 0
+
+fn=<method 'startswith' of 'unicode' objects>
+0 0
+
+fn=<method 'findall' of '_sre.SRE_Pattern' objects>
+0 2
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=sentences_from_text
+1267 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=span_tokenize
+calls=796 1257
+1267 63
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=first_upper
+434 0
+cfn=<method 'isupper' of 'unicode' objects>
+calls=64 0
+434 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=__init__
+274 0
+cfn=<isinstance>
+calls=1 0
+274 0
+
+fl=/home/fernando/miniconda/lib/python2.7/genericpath.py
+fn=exists
+23 0
+cfn=<posix.stat>
+calls=4 0
+23 0
+
+fl=/home/fernando/miniconda/lib/python2.7/posixpath.py
+fn=abspath
+358 0
+cfl=/home/fernando/miniconda/lib/python2.7/posixpath.py
+cfn=normpath
+calls=2 329
+358 0
+cfl=/home/fernando/miniconda/lib/python2.7/posixpath.py
+cfn=isabs
+calls=2 52
+358 0
+
+fl=analyzer-profiled.py
+fn=get_shortest_answer
+107 0
+cfn=<len>
+calls=94 0
+107 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/compat.py
+fn=_decorator
+389 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+cfn=__init__
+calls=2 283
+389 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/compat.py
+cfn=add_py3_data
+calls=2 375
+389 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=apply
+298 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=xform
+calls=100 179
+298 2
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/__init__.py
+fn=sent_tokenize
+75 1
+cfn=<method 'format' of 'str' objects>
+calls=796 0
+75 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/data.py
+cfn=load
+calls=796 699
+75 36
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=tokenize
+calls=796 1222
+75 65
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=word_tokenize
+258 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_word_tokenizer_re
+calls=1257 242
+258 2
+cfn=<method 'findall' of '_sre.SRE_Pattern' objects>
+calls=1257 0
+258 2
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=parse
+1182 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=parse
+calls=100 987
+1182 8
+cfn=<range>
+calls=100 0
+1182 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+fn=compile
+567 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+cfn=isstring
+calls=37 546
+567 0
+cfn=<_sre.compile>
+calls=37 0
+567 0
+cfn=<method 'items' of 'dict' objects>
+calls=37 0
+567 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+cfn=_code
+calls=37 552
+567 2
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=parse
+calls=37 706
+567 5
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=__init__
+388 4
+cfn=<setattr>
+calls=13434 0
+388 3
+cfn=<method 'endswith' of 'unicode' objects>
+calls=2184 0
+388 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_get_type
+calls=2184 411
+388 3
+
+fn=<method 'translate' of 'str' objects>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=closegroup
+85 0
+cfn=<method 'remove' of 'list' objects>
+calls=37 0
+85 0
+
+fn=<method 'replace' of 'str' objects>
+0 0
+
+fn=<ord>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+fn=_code
+552 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+cfn=_compile
+calls=37 64
+552 1
+cfn=<method 'append' of 'list' objects>
+calls=37 0
+552 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+cfn=_compile_info
+calls=37 433
+552 0
+
+fl=analyzer-profiled.py
+fn=get_node_content
+28 0
+cfn=<method 'join' of 'str' objects>
+calls=324 0
+28 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=__delitem__
+139 0
+
+fn=<method 'rstrip' of 'unicode' objects>
+0 0
+
+fn=<method 'join' of 'str' objects>
+0 2
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+fn=_compile_info
+433 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=getwidth
+calls=37 151
+433 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+cfn=_compile_charset
+calls=8 228
+433 0
+cfn=<method 'extend' of 'list' objects>
+calls=14 0
+433 0
+cfn=<method 'append' of 'list' objects>
+calls=201 0
+433 0
+cfn=<len>
+calls=129 0
+433 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__getitem__
+calls=26 141
+433 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__len__
+calls=15 137
+433 0
+
+fn=<len>
+0 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__len__
+calls=70 137
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=__init__
+1107 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=_read_grammar
+calls=1 1142
+1107 1
+cfn=<isinstance>
+calls=1 0
+1107 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/classify/maxent.py
+fn=labels
+573 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/util.py
+fn=ngrams
+383 6
+cfn=<next>
+calls=1982 0
+383 0
+cfn=<iter>
+calls=694 0
+383 0
+cfn=<method 'append' of 'list' objects>
+calls=12955 0
+383 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=__getitem__
+141 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__init__
+calls=38 92
+141 0
+cfn=<isinstance>
+calls=555 0
+141 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=get
+212 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__next
+calls=1291 193
+212 0
+
+fn=<method 'endswith' of 'str' objects>
+0 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=__len__
+137 0
+cfn=<len>
+calls=240 0
+137 0
+
+fn=<range>
+0 0
+
+fn=<method 'close' of 'file' objects>
+0 0
+
+fn=<method 'end' of '_sre.SRE_Match' objects>
+0 0
+
+fn=<method 'replace' of 'unicode' objects>
+0 0
+
+fn=<isinstance>
+0 1
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=_annotate_first_pass
+560 1
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_first_pass_annotation
+calls=2184 581
+560 4
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_tokenize_words
+calls=2948 533
+560 22
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=_realign_boundaries
+1290 2
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=_pair_iter
+calls=2412 303
+1290 59
+cfn=<method 'match' of '_sre.SRE_Pattern' objects>
+calls=820 0
+1290 0
+cfn=<method 'group' of '_sre.SRE_Match' objects>
+calls=24 0
+1290 0
+cfn=<method 'rstrip' of 'unicode' objects>
+calls=24 0
+1290 0
+cfn=<len>
+calls=24 0
+1290 0
+cfn=<method 'end' of '_sre.SRE_Match' objects>
+calls=24 0
+1290 0
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/probability.py
+fn=add_logs
+1976 65
+cfn=<min>
+calls=50265 0
+1976 6
+cfn=<math.log>
+calls=50265 0
+1976 11
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/probability.py
+fn=<genexpr>
+591 6
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=_tokenize_words
+533 3
+cfn=<method 'strip' of 'unicode' objects>
+calls=1317 0
+533 0
+cfn=<method 'split' of 'unicode' objects>
+calls=852 0
+533 0
+cfn=<next>
+calls=1257 0
+533 0
+cfn=<iter>
+calls=1257 0
+533 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=word_tokenize
+calls=1257 258
+533 6
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=__init__
+calls=2184 388
+533 11
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=expand_template
+822 3
+cfn=<method 'group' of '_sre.SRE_Match' objects>
+calls=3994 0
+822 0
+cfn=<method 'join' of 'unicode' objects>
+calls=2214 0
+822 1
+
+fn=<method 'isupper' of 'unicode' objects>
+0 0
+
+fn=<method 'copy' of 'dict' objects>
+0 1
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=parse
+706 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__init__
+calls=37 189
+706 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__init__
+calls=37 67
+706 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=get
+calls=37 212
+706 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=_parse_sub
+calls=37 317
+706 4
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=__setstate__
+198 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_compile.py
+fn=_mk_bitmap
+411 0
+cfn=<method 'translate' of 'str' objects>
+calls=13 0
+411 0
+cfn=<len>
+calls=13 0
+411 0
+cfn=<range>
+calls=13 0
+411 0
+
+fl=/home/fernando/miniconda/lib/python2.7/posixpath.py
+fn=isabs
+52 0
+cfn=<method 'startswith' of 'unicode' objects>
+calls=4 0
+52 0
+cfn=<method 'startswith' of 'str' objects>
+calls=896 0
+52 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=_parse_sub
+317 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__init__
+calls=16 92
+317 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=append
+calls=17 149
+317 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=_parse
+calls=122 395
+317 4
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=match
+calls=174 206
+317 0
+cfn=<method 'append' of 'list' objects>
+calls=124 0
+317 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__delitem__
+calls=4 139
+317 0
+cfn=<len>
+calls=108 0
+317 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__getitem__
+calls=57 141
+317 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=__len__
+calls=41 137
+317 0
+
+fn=<method 'join' of 'unicode' objects>
+0 1
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=literal
+741 0
+cfn=<method 'append' of 'list' objects>
+calls=55 0
+741 0
+
+fl=analyzer-profiled.py
+fn=flatten_questions_titles
+81 0
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=compile
+calls=1 192
+81 0
+cfl=/home/fernando/miniconda/lib/python2.7/string.py
+cfn=lower
+calls=100 222
+81 0
+cfl=/home/fernando/miniconda/lib/python2.7/re.py
+cfn=sub
+calls=100 148
+81 0
+cfn=<method 'append' of 'list' objects>
+calls=100 0
+81 0
+cfn=<method 'join' of 'str' objects>
+calls=1 0
+81 0
+
+fn=<math.log>
+0 11
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+fn=tokenize
+1222 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/tokenize/punkt.py
+cfn=sentences_from_text
+calls=796 1267
+1222 64
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+fn=_notrace_apply
+973 0
+cfl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/chunk/regexp.py
+cfn=apply
+calls=100 298
+973 2
+
+fl=/home/fernando/miniconda/lib/python2.7/urllib.py
+fn=unquote
+1225 0
+cfl=/home/fernando/miniconda/lib/python2.7/urllib.py
+cfn=_is_unicode
+calls=2 1058
+1225 0
+
+fl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+fn=isname
+227 0
+cfl=/home/fernando/miniconda/lib/python2.7/sre_parse.py
+cfn=isident
+calls=53 221
+227 0
+
+fn=<method 'disable' of '_lsprof.Profiler' objects>
+0 0
+
+fn=<method 'startswith' of 'str' objects>
+0 1
+
+fl=/home/fernando/miniconda/lib/python2.7/site-packages/nltk/compat.py
+fn=add_py3_data
+375 0
+
