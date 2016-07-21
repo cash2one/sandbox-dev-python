@@ -1,0 +1,8 @@
+Here we move the home button up to a nav bar in the top right. 
+
+We do this using the {% include %} Jinja2 statement, which lets us insert
+a block of code delared in another template. Unlike inheritance, this
+just takes the included file wholesale and inserts it, there is no reverse
+matching of blocks or anything.
+
+See base.html and nav.html for the example of this. 

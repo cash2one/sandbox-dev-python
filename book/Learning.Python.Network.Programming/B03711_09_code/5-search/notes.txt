@@ -1,0 +1,44 @@
+Here we add a search system for doing free text searches of the docstring
+contents.
+
+With this upgrade we're using forms, and showing how to access submitted form
+parameters from within our views. We also include a Jinja2 filter ('sort') in
+the search results page, search.html.
+
+First we add a search form to our nav.html. This is a simple HTML form which
+sends a single parameter 'searchtext', with an action URL of '/search'.
+
+In tinyflaskapp.py we add a new view, search(), which we assign to the /search
+path. In this function we first retrieve the searchtext parameter from the
+request. We do this using Flask's request object, which contains details about
+the request. The request.args attribute contains a dict of all parameters in
+the request. 
+
+Next we run our search by scanning through the docstring to see if any strings
+match searchtext. if so we note the function name in our search result, but we
+also want to provide some context for the match, so we also note the content 
+of the line of the docstring that matched, and perform some regex jiggery-
+pokery to wrap the matching text in a <span> tag so we can highlight it when
+we display the results.
+
+This is an area which touches on the autoescaping markup caveat of Jinja2's
+protection against XSS attackes. Here we want our line to be rendered by the
+template _without_ the template's autoescaping, because we need to retain
+the <span> we've added. We do this by wrapping the line in the Markup class
+before passing it to the template. Templates treat Markup text as strings
+except that they don't apply escaping, even if autoescaping is enabled. By
+wrapping the line in Markup we're telling the template the string is safe to
+render without escaping. However, there may be code-like structures in the
+docstring line itself which we _do_ want escaped - it is programming language
+documentation after all (or in another situation it could be user generated
+content, and hence even more reason to escape it) - so we're careful to escape
+it before we insert the span, using the Flask.escape() function. 
+
+Finally we add a search results page, search.html. Here we just iterate the
+results and show them in a table. Note in the {% for result in results|sort %}
+instruction though we're using a Jinja2 filter to sort the results before we
+display them. Filters are activated with the | operator, and work like pipes
+in a command shell. They can be applied to any type of object, including
+strings, and can be chained together. There are quite a few filters available,
+details of which can be found in the Jinja2 docs:
+(http://jinja.pocoo.org/docs/dev/templates/#filters)

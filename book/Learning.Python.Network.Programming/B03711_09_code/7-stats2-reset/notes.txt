@@ -1,0 +1,21 @@
+Finally we add a reset button for our stats. 
+
+Here we introduce Flask's message flashing system.
+
+We've added a 'reset' button to the stats page. When it's clicked, we POST to
+the /stats page and it clears our session stats, then redirects to the stats
+page again. We use POST because that is the designated HTTP method to use when
+we want our HTTP request to change some state. This is as opposed to GET,
+which by convention should never change state. The redirect is used because if
+the user uses the browser's back button it won't retrigger the POST operation
+which clears the stats. Although that wouldn't be much of a problem here, in
+more consequential apps accidentally retriggering a POST could have unwelcome
+outcomes ("One is sure one only ordered the one Rolls Royce").
+
+In order to notify the user that the stats have been cleared we use Flask
+message flashing. The flash() function we use in search() adds a flash message
+to the session. These messages are retrievable by the app when it recieves the
+next request from the client, but are then discarded. They are great for
+showing one-time messages such as 'incorrect password'. Here we flash the
+'Stats cleared!' message, and then render it in the stats.html template using
+the get_flashed_messages() function. 

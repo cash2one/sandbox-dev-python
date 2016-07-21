@@ -1,0 +1,33 @@
+Here we're adding functionality to remember how many times a function has been
+viewed by the current user. 
+
+We introduce Flask cookie-based sessions here.
+
+Flask sessions allow client state to be retained between requests. Flask does
+this using cookies - state is stored client side between requests by sending 
+it in a cookie with every response. Flask has built in cookie security in the
+form of cookie signing - each cookie is signed with the application's secret
+key, so although clients can view cookie values, it's not possible for them
+to alter them and send spoofed information back to the server. 
+
+In order to take advantage of this we first setup our secret key in
+tinyflaskapp.py, in the line app.secret_key = 'randomstuff'. Make sure to
+replace 'randomstuff' with your own random string. And make sure it is
+long and random. One way to generate a random key is:
+
+>>> import os
+>>> os.urandom(32)
+b'\x0c\xd4\x9a\xd6\xbb\xae\xe5\x8e\xc4KP\xbf^ \x1ak\x93\xda\x95\xe90\xe2\x8cN\xad\xba\xba\xf3\x91\xc9\xa1\xdb'
+
+Take the generated value and paste it in as your secret key.
+
+To use sessions we use the Flask session object. This is a dict-like object
+whose values are stored in the cookie and become available to us in the next
+request. You can see we've updated the show_docstring() view to use session
+to keep tally of how many times a function is viewed.
+
+We've also added a new /stats page to show the current view counts, and
+added a 'stats' link to nav.html. In stats.html you can see examples
+of new filters, length and reverse, and filter chaining.
+
+
